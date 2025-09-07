@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteBites – Student Order</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome, Student!</h1>
+      <p>Ready to grab a bite? Pre-order your meal now.</p>
+    </header>
+
+    <div class="content">
+      <div class="form-container">
+        <form id="orderForm">
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required placeholder="Enter your full name">
+          </div>
+
+          <div class="form-group">
+            <label for="id">Student ID:</label>
+            <input type="text" id="id" required placeholder="Enter your student ID">
+          </div>
+
+          <div class="form-group">
+            <label for="menu">Select Item:</label>
+            <select id="menu" required>
+              <option value="">-- Choose your meal --</option>
+              <option value="Idli">Idli (₹30)</option>
+              <option value="Dosa">Dosa (₹50)</option>
+              <option value="Pongal">Pongal (₹40)</option>
+              <option value="Vada">Vada (₹25)</option>
+              <option value="Meal">Full Meal (₹80)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="time">Pickup Time:</label>
+            <select id="time" required>
+              <option value="">-- Select pickup time --</option>
+              <option value="10:30 AM">10:30 AM</option>
+              <option value="10:45 AM">10:45 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="11:15 AM">11:15 AM</option>
+              <option value="11:30 AM">11:30 AM</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Special Instructions (optional):</label>
+            <input type="text" id="notes" placeholder="Any special requests?">
+          </div>
+
+          <button type="submit" class="btn">Place Order</button>
+        </form>
+
+        <div id="confirmation" style="margin-top: 20px; font-weight: bold; text-align: center;"></div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="index.html" class="btn btn-secondary">🔙 Back to Home</a>
+    </footer>
+  </div>
+
+  <div class="notification" id="notification"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

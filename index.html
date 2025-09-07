@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteBites - Canteen Pre-Order System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+
+<!-- Your Firebase Config -->
+<script src="firebase-config.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to ByteBites</h1>
+      <p>Pre-order your meals and skip the queue!</p>
+    </header>
+
+    <div class="content">
+      <div class="section-title">
+        <h2>Who are you today?</h2>
+        <p>Select your role to get started</p>
+      </div>
+
+      <div class="role-container">
+        <div class="role-card" onclick="location.href='student.html'">
+          <div class="role-icon">🎓</div>
+          <div class="role-label">Student</div>
+          <div class="role-desc">Pre-order your meals as a student</div>
+        </div>
+
+        <div class="role-card" onclick="location.href='staff.html'">
+          <div class="role-icon">👔</div>
+          <div class="role-label">Staff</div>
+          <div class="role-desc">Access staff features and ordering</div>
+        </div>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-clock"></i>
+          <h3>Save Time</h3>
+          <p>Skip the queue with pre-orders</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-utensils"></i>
+          <h3>Fresh Meals</h3>
+          <p>Prepared just when you need them</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-money-bill-wave"></i>
+          <h3>Easy Payment</h3>
+          <p>Pay when you pick up your order</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2023 ByteBites Canteen Pre-Order System | Hackathon Project</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
